@@ -27,6 +27,12 @@ is shown on the UI
 
 def get_output(service):
     """ Prepare service output """
+    print("START DEBUG===========>")
+    print(str(service))
+    print("END DEBUG============>")
+    print("START DEBUG========>")
+    print(str(service['ds']))
+    print("END DEBUG=========>")
     outputs = []
     perfdatas = []
     for ds_name, _ in service['ds'].items():
